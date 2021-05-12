@@ -53,6 +53,7 @@ function adminDashboardHandler()
     ]);
 }
 
+// Címlap handler function-je
 function homeHandler()
 {
     $pdo = getConnection();
