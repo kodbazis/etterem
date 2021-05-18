@@ -1,5 +1,11 @@
 <?php
 
+if($_SERVER['DEPLOYMENT_MODE'] === "DEV") {
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
+}
+
 require './router.php';
 require './slugifier.php';
 require './dishes.php';
